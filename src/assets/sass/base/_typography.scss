@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 // Body defaults
@@ -22,7 +22,7 @@ h5,
 h6 {
     font-weight: 700;
     line-height: 1.2;
-    margin: 1.5rem 0 1rem;
+    margin: 1rem 0 1rem;
 }
 
 h1 {
@@ -76,6 +76,41 @@ a {
         text-decoration: underline;
     }
 }
+
+.font-xs { font-size: 0.75rem; }
+.font-sm { font-size: 0.875rem; }
+.font-md { font-size: 1rem; }
+.font-lg { font-size: 1.25rem; }
+.font-xl { font-size: 1.5rem; }
+.font-2xl { font-size: 2rem; }
+.font-3xl { font-size: 2.5rem; }
+.font-4xl { font-size: 3rem; }
+.font-5xl { font-size: 5rem; }
+
+.fw-thin { font-weight: 100; }
+.fw-extra-light { font-weight: 200; }
+.fw-light { font-weight: 300; }
+.fw-regular { font-weight: 400; }
+.fw-medium { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold { font-weight: 700; }
+.fw-extra-bold { font-weight: 800; }
+.fw-black { font-weight: 900; }
+
+.text-accent{
+    color: $secondary-color;
+}
+
+@media (min-width: 48rem) {
+    .font-md-lg { font-size: 1.125rem; }
+    .font-lg-xl { font-size: 1.5rem; }
+}
+
+@media (min-width: 64rem) {
+    .font-lg-2xl { font-size: 2rem; }
+    .font-xl-3xl { font-size: 2.5rem; }
+}
+
 
 // Tablet and up
 @media (min-width: 48rem) {

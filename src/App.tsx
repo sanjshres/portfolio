@@ -1,14 +1,13 @@
-import Navbar from "./layout/navbar"
+import { HeroSection } from "./components/HeroSection";
+import Navbar from "./layout/navbar";
 
 function App() {
-
-
   return (
     <>
-    <Navbar />
-<h1> Sanjay's portfolio home page</h1>
+      <Navbar />
+      <HeroSection />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
