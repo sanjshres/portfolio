@@ -1,42 +1,11 @@
 import React from "react";
+import { skillData } from "../data/data";
 
 
-interface SkillCategory {
+export type SkillCategory = {
   category: string;
   skills: string[];
 }
-
-const skillData: SkillCategory[] = [
-  {
-    category: "Frontend",
-    skills: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "CSS",
-      "Bootstrap",
-      "Tailwind CSS",
-    ],
-  },
-  {
-    category: "Backend",
-    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs"],
-  },
-  {
-    category: "Tools & Others",
-    skills: ["Git", "Docker", "Jest", "Figma", "Framer Motion"],
-  },
-  {
-    category: "Soft Skills",
-    skills: [
-      "Communication",
-      "Teamwork",
-      "Problem-solving",
-      "Time management",
-      "Adaptability",
-    ],
-  },
-];
 
 const Skills: React.FC = () => {
   return (

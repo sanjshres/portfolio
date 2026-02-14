@@ -6,62 +6,15 @@ import {
   CaretCircleRightIcon,
   CheckIcon,
 } from "@phosphor-icons/react";
+import { experiences } from "../data/data";
 
-interface ExperienceItem {
+export type ExperienceItem = {
   company: string;
   role: string;
   duration: string;
   responsibilities: string[];
 }
 
-const experiences: ExperienceItem[] = [
-  {
-    company: "Apple",
-    role: "Software Developer",
-    duration: "July – December 2016",
-    responsibilities: [
-      "Implemented performance optimization strategies, resulting in a 20% improvement in page load times across the platform.",
-      "Ensured cross-browser compatibility for the platform, enhancing the user experience for a diverse user base.",
-      "Integrated interactive data analytics features into the platform.",
-    ],
-  },
-  {
-    company: "Microsoft",
-    role: "Frontend Engineer",
-    duration: "Jan – June 2017",
-    responsibilities: [
-      "Built scalable React components for internal dashboards.",
-      "Collaborated with design team to improve accessibility.",
-    ],
-  },
-  {
-    company: "Spotify",
-    role: "UI Developer",
-    duration: "July – Dec 2017",
-    responsibilities: [
-      "Optimized media streaming interfaces for faster load times.",
-      "Implemented A/B testing features for UX improvements.",
-    ],
-  },
-  {
-    company: "Stripe",
-    role: "Frontend Developer",
-    duration: "Jan – Dec 2018",
-    responsibilities: [
-      "Designed payment integration features for web apps.",
-      "Improved UI responsiveness across devices.",
-    ],
-  },
-  {
-    company: "Webflow",
-    role: "Software Developer",
-    duration: "Jan – June 2019",
-    responsibilities: [
-      "Implemented interactive analytics features.",
-      "Enhanced platform performance by 20%.",
-    ],
-  },
-];
 
 const Experience: React.FC = () => {
   const [selected, setSelected] = useState(0);

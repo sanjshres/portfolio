@@ -1,18 +1,11 @@
 import React from "react";
-import { GithubLogoIcon, LinkedinLogoIcon, XLogoIcon, EnvelopeIcon } from "@phosphor-icons/react";
+import { socialLinks } from "../data/data";
 
-interface SocialLink {
+export type SocialLink =  {
   name: string;
   url: string;
   icon: React.ElementType; 
 }
-
-const socialLinks: SocialLink[] = [
-  { name: "GitHub", url: "https://github.com", icon: GithubLogoIcon },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: LinkedinLogoIcon },
-  { name: "Twitter", url: "https://twitter.com", icon: XLogoIcon },
-  { name: "Email", url: "mailto:contact@example.com", icon: EnvelopeIcon },
-];
 
 const Footer: React.FC = () => {
   return (

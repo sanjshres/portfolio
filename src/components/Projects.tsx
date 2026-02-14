@@ -1,51 +1,13 @@
 import { ArrowCircleUpRightIcon } from "@phosphor-icons/react";
 import React from "react";
+import { projects } from "../data/data";
 
-interface Project {
+export type Project = {
   id: number;
   title: string;
   link: string;
   description: string;
 }
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Project 1",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-  {
-    id: 4,
-    title: "Project 4",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-  {
-    id: 5,
-    title: "Project 5",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-  {
-    id: 6,
-    title: "Project 6",
-    link: "#",
-    description: "A web application built with React and TypeScript.",
-  },
-];
 
 const Projects: React.FC = () => {
   return (
