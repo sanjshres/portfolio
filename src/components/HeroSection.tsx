@@ -5,7 +5,7 @@ export const HeroSection: React.FC = () => {
   return (
     <section className="hero p-4 d-flex align-items-center">
       <Row className="w-100">
-        <Col xs={12} md={6}>
+        <Col xs={12} md={7} className="d-flex justify-content-center align-items-start flex-column">
           <div className="hero-content">
             {" "}
             <h4 className="font-xl fw-regular">Hey, I'm Sanjay 👋🏻</h4>
@@ -25,10 +25,10 @@ export const HeroSection: React.FC = () => {
           </div>
         </Col>
 
-        <Col xs={12} md={6}>
+        <Col xs={12} md={5}>
          <div className="hero-image-container d-flex justify-content-center">
              <img
-            src="/src/assets/images/hero-image.png"
+            src="/src/assets/images/selfImage.jpg"
             alt="Hero Image"
             className="hero-image"
           />

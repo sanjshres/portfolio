@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar p-0 m-0">
       <div className="navbar-container d-flex justify-content-between align-items-center w-100">
         <div className="navbar-logo">Sanjay.</div>
         <button className="navbar-button">
