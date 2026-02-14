@@ -1,12 +1,10 @@
 
-import './App.css'
-
 function App() {
 
 
   return (
     <>
-<h1> Sanjay's portfolio in progress</h1>
+<h1> Sanjay's portfolio home page</h1>
     </>
   )
 }
