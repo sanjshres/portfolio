@@ -41,12 +41,12 @@
 // Icon only button
 .btn-icon {
   padding: 0.5rem;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
-
-  svg,
-  i {
-    width: 1.25rem;
-    height: 1.25rem;
+  min-width: 3rem;
+  min-height: 3rem;
+      border-radius: 50%;
+&:hover {
+    background-color: $secondary-color;
+    color: #ffffff;
+    border-radius: 50%;
   }
 }
