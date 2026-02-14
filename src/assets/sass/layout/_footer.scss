@@ -1,0 +1,7 @@
+@use "sass:color";
+
+.footer{
+   background-color: color.adjust($secondary-color, $lightness: -10%);
+    color: $primary-color;
+    margin: 0 auto
+}
