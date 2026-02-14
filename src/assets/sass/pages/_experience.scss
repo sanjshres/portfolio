@@ -1,6 +1,8 @@
 .experience {
   .company-name {
+    width: max-content !important;
     cursor: pointer;
+    margin: 0.5rem 0;
   }
   .activeIndicator {
     position: absolute;

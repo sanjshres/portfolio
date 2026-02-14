@@ -19,7 +19,7 @@ export const HeroSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="hero-cta">
+          <div className="hero-cta d-flex gap-3 mt-4">
             <button className="btn btn-secondary">Get in touch</button>{" "}
             <button className="btn btn-secondary-outline">CV</button>
           </div>

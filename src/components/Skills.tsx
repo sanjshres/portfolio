@@ -9,7 +9,7 @@ export type SkillCategory = {
 
 const Skills: React.FC = () => {
   return (
-    <section className="skills container mb-5">
+    <section className="skills container my-5">
       <h1 className="font-4xl mb-4">
         Skills<span className="text-accent">.</span>
       </h1>

@@ -12,9 +12,9 @@ const Footer: React.FC = () => {
     <footer className="py-6 footer ">
       <div className="w-100 mx-auto px-4 d-flex flex-col align-items-center justify-content-between gap-4 container">
         <div className="d-flex justify-content-start gap-6 mb-6">
-            <div  className="d-flex flex-column gap-3 align-items-center justify-content-start">
+            <div  className="d-flex flex-column gap-3 align-items-start justify-content-start">
                 <span> Find me on </span>
-       <div>
+       <div className="d-flex gap-3">
            {socialLinks.map(({ name, url, icon: Icon }) => (
             <a
               key={name}

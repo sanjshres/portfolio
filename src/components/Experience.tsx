@@ -39,24 +39,23 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section className="experience container mt-5 d-flex flex-column align-items-start w-100 p-4">
+    <section className="experience container my-5 d-flex flex-column align-items-start w-100 p-4">
       <h1 className="mb-5">
         Experience<span className="text-accent">.</span>
       </h1>
 
-      <Row>
-        {/* Company list for md+ screens */}
+      <Row className="w-100">
         <Col md={3} className="d-none d-md-flex flex-column position-relative">
           {experiences.map((exp, i) => (
             <div
               key={i}
               className={`py-2 px-2 cursor-pointer d-flex justify-content-start align-items-center ${
-                selected === i ? "font-weight-bold text-accent" : ""
+                selected === i ? "text-accent" : ""
               }`}
               onClick={() => setSelected(i)}
               style={{ position: "relative" }}
             >
-              <p className="font-2xl m-0 company-name">{exp.company}</p>
+              <p className="font-2xl company-name">{exp.company}</p>
               {selected === i && (
                 <motion.div
                   layoutId="activeIndicator"
@@ -126,7 +125,6 @@ const Experience: React.FC = () => {
               </button>
             )}
 
-            {/* {selected === 0 && />} */}
             {selected < experiences.length - 1 && (
               <button
                 className="btn btn-icon"
