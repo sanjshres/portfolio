@@ -24,8 +24,8 @@
 .btn-secondary {
   background-color: $secondary-color;
   color: $primary-color;
-  &-hover {
-    background-color: darken($secondary-color, 50%);
+  &:hover {
+    background-color: darken($secondary-color, 10%);
   }
 }
 
