@@ -55,12 +55,12 @@ const Experience: React.FC = () => {
       <h1 className="mb-5">
         Experience<span className="text-accent">.</span>
       </h1>
-      {companyName && (
+      /* {companyName && (
         <p className="experience-company mb-4">
           {companyName}
           <span className="text-accent">.</span>
         </p>
-      )}
+      )} */
 
       <Row className="w-100">
         <Col md={3} className="d-none d-md-flex flex-column position-relative">
