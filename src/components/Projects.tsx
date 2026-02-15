@@ -23,18 +23,20 @@ const Projects: React.FC = () => {
       <div className="projects-container">
         {projects.map((project: Project) => (
           <a key={project.id} href={project.link} className="project-item">
-            <img
-              src={getProjectPreviewUrl(project.link)}
-              alt={project.title}
-              className="project-image"
-              loading="lazy"
-              referrerPolicy="no-referrer"
-              onError={(event) => {
-                event.currentTarget.onerror = null;
-                event.currentTarget.src =
-                  "https://placehold.co/1200x800/111827/e5e7eb?text=Project+Preview";
-              }}
-            />
+            <div className="project-preview">
+              <img
+                src={getProjectPreviewUrl(project.link)}
+                alt={project.title}
+                className="project-image"
+                loading="lazy"
+                referrerPolicy="no-referrer"
+                onError={(event) => {
+                  event.currentTarget.onerror = null;
+                  event.currentTarget.src =
+                    "https://placehold.co/1200x800/f5f5f5/1f2937?text=Project+Preview";
+                }}
+              />
+            </div>
 
             <div className="project-overlay">
               <h2>

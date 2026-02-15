@@ -15,9 +15,21 @@ export type ExperienceItem = {
   responsibilities: string[];
 }
 
+const getYearRange = (duration: string) => {
+  const yearMatches = duration.match(/\d{4}/g);
+  if (!yearMatches || yearMatches.length === 0) return duration;
+
+  const startYear = yearMatches[0];
+  const endYear = duration.toLowerCase().includes("present")
+    ? "Present"
+    : yearMatches[yearMatches.length - 1];
+
+  return `${startYear} - ${endYear}`;
+};
 
 const Experience: React.FC = () => {
   const [selected, setSelected] = useState(0);
+  const companyName = experiences[0]?.company ?? "";
 
   const containerVariants = {
     hidden: { opacity: 0, x: 20 },
@@ -43,6 +55,12 @@ const Experience: React.FC = () => {
       <h1 className="mb-5">
         Experience<span className="text-accent">.</span>
       </h1>
+      {companyName && (
+        <p className="experience-company mb-4">
+          {companyName}
+          <span className="text-accent">.</span>
+        </p>
+      )}
 
       <Row className="w-100">
         <Col md={3} className="d-none d-md-flex flex-column position-relative">
@@ -55,7 +73,7 @@ const Experience: React.FC = () => {
               onClick={() => setSelected(i)}
               style={{ position: "relative" }}
             >
-              <p className="font-2xl company-name">{exp.company}</p>
+              <p className="font-2xl company-name">{getYearRange(exp.duration)}</p>
               {selected === i && (
                 <motion.div
                   layoutId="activeIndicator"
