@@ -1,11 +1,23 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import { EnvelopeSimpleIcon, PhoneIcon } from "@phosphor-icons/react";
+import {
+  ArrowLeftIcon,
+  EnvelopeSimpleIcon,
+  PhoneIcon,
+} from "@phosphor-icons/react";
 import { socialLinks } from "../data/data";
 
-const GetInTouch: React.FC = () => {
+type GetInTouchProps = {
+  onBack: () => void;
+};
+
+const GetInTouch: React.FC<GetInTouchProps> = ({ onBack }) => {
   return (
     <section className="get-in-touch container mt-5 d-flex flex-column align-items-start justify-content-center w-100 p-4">
+      <button className="btn btn-secondary-outline mb-4 d-inline-flex align-items-center gap-2" onClick={onBack}>
+        <ArrowLeftIcon size={18} />
+        Back to home
+      </button>
       <h1 className="mb-4 font-4xl text-accent">
         Get In Touch<span className="text-accent">.</span>
       </h1>
@@ -21,7 +33,9 @@ const GetInTouch: React.FC = () => {
           <PhoneIcon size={28} className="text-accent" />
           <div>
             <h6 className="mb-1">Phone</h6>
-            <p className="mb-0">+1 (123) 456-7890</p>
+            <a href="tel:+9779843064210" className="text-decoration-none text-reset">
+              +977 (984) 306-4210
+            </a>
           </div>
         </Col>
 
@@ -30,10 +44,10 @@ const GetInTouch: React.FC = () => {
           <div>
             <h6 className="mb-1">Email</h6>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:sanjay.gopal.shrestha@gmail.com"
               className="text-decoration-none text-reset"
             >
-              your.email@example.com
+              sanjay.gopal.shrestha@gmail.com
             </a>
           </div>
         </Col>

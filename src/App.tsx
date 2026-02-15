@@ -17,10 +17,10 @@ function App() {
         setToggleContact={setToggleContact}
       />
       {toggleContact ? (
-        <GetInTouch />
+        <GetInTouch onBack={() => setToggleContact(false)} />
       ) : (
         <>
-          <HeroSection />
+          <HeroSection onToggleContact={() => setToggleContact((prev) => !prev)} />
           <Projects />
           <Experience />
           <Skills />

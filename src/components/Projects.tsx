@@ -9,6 +9,9 @@ export type Project = {
   description: string;
 }
 
+const getProjectPreviewUrl = (url: string) =>
+  `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200`;
+
 const Projects: React.FC = () => {
   return (
     <div className="projects-section container p-4">
@@ -21,9 +24,16 @@ const Projects: React.FC = () => {
         {projects.map((project: Project) => (
           <a key={project.id} href={project.link} className="project-item">
             <img
-              src="/src/assets/images/selfImage.jpg"
+              src={getProjectPreviewUrl(project.link)}
               alt={project.title}
               className="project-image"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              onError={(event) => {
+                event.currentTarget.onerror = null;
+                event.currentTarget.src =
+                  "https://placehold.co/1200x800/111827/e5e7eb?text=Project+Preview";
+              }}
             />
 
             <div className="project-overlay">

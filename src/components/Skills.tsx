@@ -16,11 +16,11 @@ const Skills: React.FC = () => {
 
       <div className="skills-section mb-5">
         {skillData.map((category, idx) => (
-          <div key={idx} className="skill-row d-flex align-items-center p-4">
+          <div key={idx} className="skill-row d-flex p-4">
             <div className="skill-title font-xl fw-semibold">
               {category.category}
             </div>
-            <div className="skill-list d-flex align-items-center flex-wrap gap-2">
+            <div className="skill-list d-flex flex-wrap gap-2">
               {category.skills.map((skill, i) => (
                 <div key={i} className="skill-item">
                   {skill}
