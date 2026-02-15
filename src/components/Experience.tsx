@@ -13,7 +13,7 @@ export type ExperienceItem = {
   role: string;
   duration: string;
   responsibilities: string[];
-}
+};
 
 const getYearRange = (duration: string) => {
   const yearMatches = duration.match(/\d{4}/g);
@@ -52,15 +52,15 @@ const Experience: React.FC = () => {
 
   return (
     <section className="experience container my-5 d-flex flex-column align-items-start w-100 p-4">
-      <h1 className="mb-5">
+      <h1 className="font-4xl mb-4">
         Experience<span className="text-accent">.</span>
       </h1>
-      /* {companyName && (
+      {/* {companyName && (
         <p className="experience-company mb-4">
           {companyName}
           <span className="text-accent">.</span>
         </p>
-      )} */
+      )} */}
 
       <Row className="w-100">
         <Col md={3} className="d-none d-md-flex flex-column position-relative">
@@ -73,12 +73,13 @@ const Experience: React.FC = () => {
               onClick={() => setSelected(i)}
               style={{ position: "relative" }}
             >
-              <p className="font-2xl company-name">{getYearRange(exp.duration)}</p>
+              <p className="font-2xl company-name">
+                {getYearRange(exp.duration)}
+              </p>
               {selected === i && (
                 <motion.div
                   layoutId="activeIndicator"
                   className="activeIndicator"
- 
                 />
               )}
             </div>

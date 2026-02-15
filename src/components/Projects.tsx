@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
             <div className="project-overlay">
               <h2>
                 {project.title}
-                <ArrowCircleUpRightIcon size={24} />
+                <ArrowCircleUpRightIcon size={24} className="text-accent" />
               </h2>
               <p>{project.description}</p>
             </div>
