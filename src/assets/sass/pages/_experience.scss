@@ -1,0 +1,16 @@
+.experience {
+  .company-name {
+    width: max-content !important;
+    cursor: pointer;
+    margin: 0.5rem 0;
+  }
+  .activeIndicator {
+    position: absolute;
+    left: -4px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #7f2bff;
+    border-radius: 2px;
+  }
+}

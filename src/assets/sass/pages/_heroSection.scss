@@ -1,0 +1,29 @@
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.hero-image {
+  width: 320px;       
+  height: 320px;     
+  border-radius: 0.75rem; 
+  object-fit: cover; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    width: 480px; 
+    height: 480px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero-image {
+    width: 600px; 
+    height: 600px;
+  }
+}

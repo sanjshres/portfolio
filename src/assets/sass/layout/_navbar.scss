@@ -1,0 +1,29 @@
+.navbar {
+  &-container {
+    padding: 1rem;
+    color: $text-color;
+  }
+  &-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $secondary-color;
+    letter-spacing: 5%;
+  
+  }
+&-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: $secondary-color;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    &:hover {
+        background-color: $secondary-color;
+        color: #fff;
+    }
+}
+}
