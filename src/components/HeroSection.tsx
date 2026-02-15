@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { DownloadSimpleIcon } from "@phosphor-icons/react";
-import selfImage from "../assets/images/selfImage.jpeg";
+import selfImage from "../assets/images/selfimage.jpeg";
 import cvFile from "../assets/CV_SGS_Feb_2026.pdf";
 
 type HeroSectionProps = {
