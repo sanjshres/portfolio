@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import selfImage from "../assets/images/selfImage.jpeg";
 
 type HeroSectionProps = {
   onToggleContact: () => void;
@@ -38,7 +39,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onToggleContact }) => 
         <Col xs={12} md={5}>
           <div className="hero-image-container d-flex justify-content-center">
             <img
-              src="/src/assets/images/selfImage.jpeg"
+              src={selfImage}
               alt="Hero Image"
               className="hero-image"
             />
