@@ -29,7 +29,7 @@ const getYearRange = (duration: string) => {
 
 const Experience: React.FC = () => {
   const [selected, setSelected] = useState(0);
-  const companyName = experiences[0]?.company ?? "";
+  // const companyName = experiences[0]?.company ?? "";
 
   const containerVariants = {
     hidden: { opacity: 0, x: 20 },
