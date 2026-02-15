@@ -14,7 +14,10 @@ type GetInTouchProps = {
 const GetInTouch: React.FC<GetInTouchProps> = ({ onBack }) => {
   return (
     <section className="get-in-touch container mt-5 d-flex flex-column align-items-start justify-content-center w-100 p-4">
-      <button className="btn btn-secondary-outline mb-4 d-inline-flex align-items-center gap-2" onClick={onBack}>
+      <button
+        className="btn btn-secondary-outline mb-4 d-inline-flex align-items-center gap-2"
+        onClick={onBack}
+      >
         <ArrowLeftIcon size={18} />
         Back to home
       </button>
@@ -33,8 +36,11 @@ const GetInTouch: React.FC<GetInTouchProps> = ({ onBack }) => {
           <PhoneIcon size={28} className="text-accent" />
           <div>
             <h6 className="mb-1">Phone</h6>
-            <a href="tel:+9779843064210" className="text-decoration-none text-reset">
-              +977 (984) 306-4210
+            <a
+              href="tel:+9779847694320"
+              className="text-decoration-none text-reset"
+            >
+              +977 (984) 7694320
             </a>
           </div>
         </Col>
